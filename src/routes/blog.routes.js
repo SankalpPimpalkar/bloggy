@@ -7,7 +7,7 @@ const blogRouter = Router()
 blogRouter.post('/create', authenticate, createBlog)
 blogRouter.patch('/:id', authenticate, updateBlog)
 blogRouter.delete('/:id', authenticate, deleteBlog)
-blogRouter.get('/all', getAllBlogs)
+blogRouter.get('/', getAllBlogs)
 blogRouter.get('/:username', getUserBlogs)
 
 export default blogRouter;
